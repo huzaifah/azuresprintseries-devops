@@ -9,7 +9,7 @@ There are many different ways of deploying code, TAA have requested an investiga
 This challenge introduces containers - which enable easily reproducible environments, perfect for deploying microservices. Azure DevOps has extensive support for building and releasing containers.
 
 # Exercise 1
-The first step in containerising your application is to build your code into a deployable image that is then used to instantiate a container. Build each of the services into individual Docker images then test on your development machine.
+The first step in containerising your application is to build your code into a deployable image that is then used to instantiate a container. Build each of the services into individual Docker images then test each service within a container on your development machine.
 
 ## Hints
 - Refer to the helpful resources for example Dockerfiles
@@ -21,11 +21,11 @@ The first step in containerising your application is to build your code into a d
 * [Dockerize an ASP.NET Core Application](https://docs.docker.com/engine/examples/dotnetcore/)
 
 # Exercise 2
-Now that the containers are successfully running locally, update the Azure DevOps Build Pipeline to build the source code into containers and push to an Azure Container Registry (ACR).
+Now that the containers are successfully running locally, update the Azure DevOps Build Pipeline to build container images of your services. Instead of deploying a release artifact deploy these images into an Azure Container Registry (ACR).
 
 ## Hints
 - Create a single Azure Container Registry resource, this can make it easier to ensure the image is the same across environments
-- Ensure you tag your containers when you release them to ACR. 
+- Ensure you tag your containers when you release them to ACR. Azure DevOps exposes variables when building that may make good candidates.
 
 
 ## Helpful resources
@@ -34,7 +34,7 @@ Now that the containers are successfully running locally, update the Azure DevOp
 * [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/)
 
 # Exercise 3
-Now the containers are ready to be deployed, update the Release Pipelines to deploy the Containers into multiple Azure Web App for Containers services in your test and production environments.
+Now the container images are stored in a container registry and are ready to be deployed, update the Release Pipelines to deploy the  images into multiple Azure Web App for Containers services in your test and production environments.
 
 ## Hints
 * You can manually deploy the Web App for Containers resources manually and use Azure DevOps to push the containers. Bonus points if you update your ARM template first.
