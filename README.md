@@ -56,7 +56,7 @@ You will need to bring your own device with your IDE of choice installed. For th
 Coaches will be available to teams during the event. Feel free to ask questions, request help and demonstrate completed tasks. Coaches are allowed to answer questions and provide guidance to the correct documentation; however they will not give the answer right away. These are designed as challenges for a reason!
 
 ## Important Links
-* **Microsoft Azure DevOps ([dev.azure.com](https://aka.ms/azuresprint/devops))**<br>Azure DevOps empowers developers to plan, manage, build and release project assets. This is the primary tool we will use for the challenges. 
+* **Microsoft Azure DevOps ([dev.azure.com/azuresprint-devops](https://dev.azure.com/azuresprint-devops))**<br>Azure DevOps empowers developers to plan, manage, build and release project assets. This is the primary tool we will use for the challenges. 
 * **Microsoft Azure Portal ([portal.azure.com](https://portal.azure.com))**<br/>Azure is the cloud platform where we will be deploying our micro-services and associated components.
 * **Microsoft Teams ([teams.microsoft.com](https://teams.microsoft.com))**<br/>Teams is the tool you will use to collaborate with your team. The challenges will demonstrate how you can integrate Teams with Azure DevOps for an integrated experience.
 * **Microsoft Outlook ([mail.office365.com](https://mail.office365.com))**<br/>Outlook (part of Office 365) will be used to demonstrate email integration with Azure DevOps.
