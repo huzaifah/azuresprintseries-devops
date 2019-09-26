@@ -1,23 +1,23 @@
 ![Azure Sprint Series Logo](../Banner.jpg)
 
 # Challenge 4: Monitoring your solution
-TAA has received some feedback and would like to increase the reliability of the web portal. In order to do this they have asked you to find a solution to reduce the time that outages take to resolve. Proper tooling and instrumentation is key to timely resolutions and enables the ability to monitor releases and roll back automatically if problems are detected.
+TAA has received some feedback and would like to increase the reliability of the web portal. You have been tasked to reduce the resolution time of outages on the web site. Proper tooling is key to timely resolutions and also enables automatic rollback if problems are detected.
 
 In this challenge you will be tasked to implement Application Insights, set up Azure Monitor and integrate both with Azure DevOps.
 
 # Exercise 1
-The first step is to create an Application Insights resource in the Azure Portal and then install the approprate SDK's into into each of the five services.
+The first step is to create an Application Insights resource in the Azure Portal and then install the approprate libraries into into each of the five services.
 
 ## Hints
-- The sample code includes a environment variable `SimulatedFailureChance` that can be set in each service to simulate errors. You can use this to see application insights in action without changing the code!
-- Application Insights has extensions for Visual Studio that can make it easier to view alerts inline with your code, however most of the functionality is exposed in the portal and be used without the dependency on Visual Studio.
+- The sample code includes an environment variable `SimulatedFailureChance` that can be set in each service to simulate errors. You can use this to see Application Insights in action without changing the code!
+- Application Insights has extensions for Visual Studio that can make it easier to view alerts inline with your code, however most of the functionality is exposed in the Azure Portal and without requiring Visual Studio.
 
 ## Helpful resources
 - [Start monitoring your ASP.NET Core Application](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/dotnetcore-quick-start)
 
 
 # Exercise 2
-It is important to know if your users can access your services. Application Insights provides availability tests out of box to test that your application is up and responding to requests. 
+It is important to know if external users can access the services. Application Insights provides availability tests out of box to test uptime and responsiveness. 
 
 Set up Application Insights to alert when any service has an availability issue. Now turn off a service and view the error that is created within Application Insights. Use the Application Insights interface to create a bug in your teams Kanban board in Azure DevOps for that availablity issue.
 
@@ -45,7 +45,7 @@ Application Insights makes it easy to quickly turn errors into work items within
 
 
 # Exercise 4
-Now we have the metrics flowing into Azure Monitor we can integrate with Azure DevOps to ensure that a new deployment did not cause an increase in failed traffic. Set up Azure DevOps and Azure Monitor to fail a release and switch slots back to the previous state if errors occur.
+Now that metrics are flowing into Azure Monitor, Azure DevOps can also be integrated to ensure that a new deployment did not cause an increase in failed traffic. Set up Azure DevOps and Azure Monitor to fail a release and switch slots back to the previous state if errors occur.
 
 ## Hints
 - You can further extend this task by splitting the traffic by a specific percentage across both slots at the same time before switching all users across.
