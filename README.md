@@ -39,7 +39,7 @@ Now that the web app is deployed, TAA is ready for some further planning and int
 - Planning
 
 ## [Challenge 5](Challenge5/README.md)
-There are many different ways of deploying code, TAA request and investigation to see if containers can make their solution more portable and easier to manage.
+There are many different ways of deploying code, TAA have requested an investigation to see if containers can make their solution more portable and easier to manage.
 - Releasing
 - Deploying
 - Monitoring
